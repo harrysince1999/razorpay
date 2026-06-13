@@ -1,4 +1,4 @@
-package com.harikesh.razorpay.razorpay;
+package com.harikesh.razorpay;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

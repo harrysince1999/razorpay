@@ -1,4 +1,4 @@
-package com.harikesh.razorpay.razorpay;
+package com.harikesh.razorpay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
