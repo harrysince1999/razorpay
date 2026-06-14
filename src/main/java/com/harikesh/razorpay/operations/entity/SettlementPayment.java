@@ -1,9 +1,11 @@
 package com.harikesh.razorpay.operations.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "settlement_payment")
+@Data
 public class SettlementPayment {
 
     @EmbeddedId

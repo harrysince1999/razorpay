@@ -3,12 +3,14 @@ package com.harikesh.razorpay.operations.entity;
 import com.harikesh.razorpay.common.entity.Money;
 import com.harikesh.razorpay.common.enums.SettlementStatus;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "settlement")
+@Data
 public class Settlement {
 
     @Id

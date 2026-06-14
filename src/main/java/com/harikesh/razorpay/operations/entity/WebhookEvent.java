@@ -2,6 +2,10 @@ package com.harikesh.razorpay.operations.entity;
 
 import com.harikesh.razorpay.common.enums.WebhookEventStatus;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -11,6 +15,9 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "webhook_event")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class WebhookEvent {
 
     @Id

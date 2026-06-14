@@ -4,12 +4,18 @@ import com.harikesh.razorpay.common.enums.PaymentActor;
 import com.harikesh.razorpay.common.enums.PaymentEvent;
 import com.harikesh.razorpay.common.enums.PaymentStatus;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "payment_transition_log")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class PaymentTransitionLog {
 
     @Id

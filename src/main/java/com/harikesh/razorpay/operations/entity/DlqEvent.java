@@ -1,6 +1,10 @@
 package com.harikesh.razorpay.operations.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -10,6 +14,9 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "dlq_event")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class DlqEvent {
 
     @Id

@@ -4,6 +4,10 @@ import com.harikesh.razorpay.common.entity.Money;
 import com.harikesh.razorpay.common.enums.PaymentMethod;
 import com.harikesh.razorpay.common.enums.PaymentStatus;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -13,6 +17,9 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "payment")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Payment {
 
     @Id
